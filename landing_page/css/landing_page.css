@@ -28,7 +28,7 @@ html body {
 }
 
 .navbar-light .navbar-brand {
-    color: #fff;
+    color: #fff !important;
 }
 
 nav .navbar-nav li a {
@@ -176,6 +176,22 @@ form .search-text {
     font-weight: 500;
     font-size: 50px;
     text-align: center;
+    color: #fff;
+}
+
+/*=============== Sustainability section ===============*/
+.test-image{
+    background-image: url("../images/hy.png");
+    background-position: center;
+    background-repeat: repeat;
+}
+
+/*=============== Footer section ===============*/
+.footer-style{
+    background-color: #001818D4;
+}
+.contact-us-text{
+    margin-top: 20px;
     color: #fff;
 }
 
