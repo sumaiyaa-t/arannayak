@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500&display=swap");
 
 /*=============== BASE ===============*/
 
@@ -19,7 +19,7 @@ html body {
 }
 
 .nav-heading {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 800;
   line-height: 30px;
 }
@@ -30,6 +30,7 @@ html body {
 
 nav .navbar-nav li a {
   font-size: 18px;
+  font-weight: 600;
   color: #fff !important;
 }
 
@@ -252,6 +253,15 @@ form .search-text {
 @media only screen and (max-width: 600px) {
 
   /* Navbar */
+
+  .nav-heading {
+    font-weight: 700;
+  }
+  
+  nav .navbar-nav li a {
+    font-weight: 500;
+  }
+  
   .form-search {
     width: 200px;
   }
