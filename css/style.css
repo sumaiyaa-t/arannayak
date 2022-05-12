@@ -193,9 +193,10 @@ form .search-text {
 }
 
 .logo-img {
-  background-color: white;
+  /* background-color: white; */
   /* padding: 10px; */
   width: 170px;
+  border-radius: 12px;
 }
 
 .follow-us {
