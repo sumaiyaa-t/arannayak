@@ -71,6 +71,17 @@ form .search-text {
   background-color: #024a4a;
 }
 
+/* Language */
+.vr-style {
+  color: #fff;
+  margin-top: 10px;
+  height: 30px;
+  width: 2px;
+  background-color: #fff;
+  
+}
+
+
 /*=============== Forest hero section ===============*/
 
 /* Container needed to position the button. Adjust the width as needed */
@@ -275,7 +286,7 @@ form .search-text {
     height: 60px;
   }
 
-  .test2-image {
+  .forest-image {
     position: relative;
     margin-top: -100;
     background-image: url("../images/forest.png");
