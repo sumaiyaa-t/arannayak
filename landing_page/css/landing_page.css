@@ -112,7 +112,7 @@ form .search-text {
   margin-left: 50%;
   margin-right: 50%;
   position: absolute;
-  top: 20%;
+  top: 155px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   color: white;
@@ -125,7 +125,7 @@ form .search-text {
 .scroll-down-btn span {
   position: absolute;
   display: block;
-  top: 10;
+  /* top: 0; */
   left: 50%;
   margin-left: -12px;
   border-right: 15px solid transparent;
@@ -136,19 +136,21 @@ form .search-text {
   box-sizing: border-box;
 }
 
-.forest-img {
+/* .forest-img {
   position: absolute;
   display: block;
   top: 50%;
-}
+} */
+
+/* -------------------------- changes by Tahmid ---------------------- */
 
 .forest-text-style {
-  position: absolute;
+  /* position: absolute;
   left: 0;
-  right: 0;
+  right: 0; */
   margin-left: auto;
   margin-right: auto;
-  top: 50%;
+  /* top: 80%; */
   font-weight: 500;
   font-size: 40px;
   text-align: center;
@@ -158,8 +160,10 @@ form .search-text {
 /* Forest Div */
 .forest-div {
   background-color: #024a4a;
-  height: 50px;
+  height: 70px;
 }
+
+/* -------------------------- changes by Tahmid ---------------------- */
 
 /*=============== All sections ===============*/
 
@@ -318,3 +322,13 @@ form .search-text {
     height: 300px;
   }
 }
+
+/* ---------------------------------------- media screen for 1366 x 768 desktop screens ---------------------------------------- */
+
+@media only screen and (device-width: 1366px) and (device-height: 768px) {
+  .scroll-down-btn {
+    top: 125px;
+  }
+}
+
+/* --------------------------------------------------------------------------- end - media screen for 1366 x 768 desktop screens */
