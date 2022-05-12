@@ -79,6 +79,7 @@ form .search-text {
   width: 100%;
 }
 
+
 /* Make the image responsive */
 .image-container img {
   width: 100%;
@@ -107,25 +108,9 @@ form .search-text {
   background-color: rgba(4, 90, 90, 0.86);
 }
 
-/* Scroll down button */
-.scroll-down-btn {
-  margin-left: 50%;
-  margin-right: 50%;
-  position: absolute;
-  top: 155px;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  color: white;
-  font-size: 30px;
-  padding: 12px 30px;
-  border: none;
-  cursor: pointer;
-}
-
-.scroll-down-btn span {
+.scroll-down-button span {
   position: absolute;
   display: block;
-  /* top: 0; */
   left: 50%;
   margin-left: -12px;
   border-right: 15px solid transparent;
@@ -136,21 +121,9 @@ form .search-text {
   box-sizing: border-box;
 }
 
-/* .forest-img {
-  position: absolute;
-  display: block;
-  top: 50%;
-} */
-
-/* -------------------------- changes by Tahmid ---------------------- */
-
 .forest-text-style {
-  /* position: absolute;
-  left: 0;
-  right: 0; */
   margin-left: auto;
   margin-right: auto;
-  /* top: 80%; */
   font-weight: 500;
   font-size: 40px;
   text-align: center;
@@ -163,7 +136,15 @@ form .search-text {
   height: 70px;
 }
 
-/* -------------------------- changes by Tahmid ---------------------- */
+.forest-image {
+  background-size: cover;
+  position: relative;
+  margin-top: -120;
+  background-image: url("../images/forest.png");
+  background-position: center;
+  background-repeat: repeat;
+}
+
 
 /*=============== All sections ===============*/
 
@@ -258,13 +239,13 @@ form .search-text {
 /*=============== Media screen for mobile devices ===============*/
 
 @media only screen and (max-width: 600px) {
+
   /* Navbar */
   .form-search {
     width: 200px;
   }
 
   /* Forest Section */
-
   .image-container .explore-btn {
     top: 30%;
     font-size: 25px;
@@ -294,14 +275,20 @@ form .search-text {
     height: 60px;
   }
 
-  /* All Section */
+  .test2-image {
+    position: relative;
+    margin-top: -100;
+    background-image: url("../images/forest.png");
+    background-position: center;
+    background-repeat: repeat;
+  }
 
+  /* All Section */
   .heading-text {
     font-size: 35px;
   }
 
   /* Footer */
-
   .footer-style {
     height: 0px;
   }
@@ -322,13 +309,3 @@ form .search-text {
     height: 300px;
   }
 }
-
-/* ---------------------------------------- media screen for 1366 x 768 desktop screens ---------------------------------------- */
-
-@media only screen and (device-width: 1366px) and (device-height: 768px) {
-  .scroll-down-btn {
-    top: 125px;
-  }
-}
-
-/* --------------------------------------------------------------------------- end - media screen for 1366 x 768 desktop screens */
