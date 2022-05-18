@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-lg navbar-light pb-0 top-nav">
             <div class="container-fluid">
                 <!--ARANNAYAK-->
-                <a href="./landing_page.html" class="navbar-brand">
+                <a href="./index.html" class="navbar-brand">
                     <p class="nav-heading mt-3 ms-lg-3">ARANNAYAK</p>
                 </a>
 
@@ -38,7 +38,7 @@
                     <!--Forest-->
                     <ul class="nav navbar-nav mx-auto">
                         <li class="nav-item navbar-brand p-md-2">
-                            <a href="./landing_page.html" class="nav-link">Forest</a>
+                            <a href="./index.html" class="nav-link">Forest</a>
                         </li>
 
                         <!--Bio-Diversity-->
@@ -87,58 +87,65 @@
                 <div id="navbarCollapse" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav mx-auto">
                         <!--Who we are -->
-                        <li class="nav-item navbar-brand p-md-2">
-                            <a href="./under_construction/under_construction.html" class="nav-link">Who we are
+                        <li class="nav-item navbar-brand who-we p-md-2">
+                            <a href="./under_construction/under_construction.html" onmouseover="openNav()"
+                                onclick="closeNav()" class="nav-link">Who we are
                             </a>
                         </li>
 
                         <!--What we do-->
                         <li class="nav-item navbar-brand p-md-2">
-                            <a href="./under_construction/under_construction.html" class="nav-link">What we do</a>
+                            <a href="./under_construction/under_construction.html" onmouseover="openNav()"
+                                onclick="closeNav()" class="nav-link">What we do</a>
                         </li>
 
                         <!--Where we work-->
                         <li class="nav-item navbar-brand p-md-2">
-                            <a href="./under_construction/under_construction.html" class="nav-link">Where we work</a>
+                            <a href="./under_construction/under_construction.html" onmouseover="openNav()"
+                                onclick="closeNav()" class="nav-link">Where we work</a>
                         </li>
 
-                         <!--Give/ Donate -->
-                         <li class="nav-item navbar-brand p-md-2">
-                            <a href="./under_construction/under_construction.html" class="nav-link">Give/Donate
+                        <!--Give/ Donate -->
+                        <li class="nav-item navbar-brand p-md-2">
+                            <a href="./under_construction/under_construction.html" onmouseover="openNav()"
+                                onclick="closeNav()" class="nav-link">Give/Donate
                             </a>
                         </li>
 
-                         <!--Get Involved -->
-                         <li class="nav-item navbar-brand p-md-2">
-                            <a href="./under_construction/under_construction.html" class="nav-link">Get Involved
+                        <!--Get Involved -->
+                        <li class="nav-item navbar-brand p-md-2">
+                            <a href="./under_construction/under_construction.html" onmouseover="openNav()"
+                                onclick="closeNav()" class="nav-link">Get Involved
                             </a>
                         </li>
 
                         <!--Media Center-->
                         <li class="nav-item navbar-brand p-md-2">
-                            <a href="./under_construction/under_construction.html" class="nav-link">Media Center</a>
+                            <a href="./under_construction/under_construction.html" onmouseover="openNav()"
+                                onclick="closeNav()" class="nav-link">Media Center</a>
                         </li>
-                       
+
                         <!--Knowledge -->
                         <li class="nav-item navbar-brand p-md-2">
-                            <a href="./under_construction/under_construction.html" class="nav-link">Knowledge</a>
+                            <a href="./under_construction/under_construction.html" onmouseover="openNav()"
+                                onclick="closeNav()" class="nav-link">Knowledge</a>
                         </li>
                         <ul class="navbar-nav nav-item navbar-brand  p-md-2 ">
                             <div class="d-flex flex-row language-style">
                                 <li class="me-1 ms-1">
                                     <a href="#" class="nav-link">EN</a>
                                 </li>
-        
+
                                 <div class="vr vr-style"></div>
-        
+
                                 <li class="me-1 ms-1">
                                     <a href="#" class="nav-link">BN </a>
                                 </li>
                             </div>
-                            
+
                         </ul>
                     </ul>
-                   
+
                 </div>
             </div>
         </nav>
@@ -147,21 +154,101 @@
     <!--==================== FOREST SECTION ====================-->
     <section>
         <div class="image-container">
-            <img src="./images/explore.png" alt="Arannayak" />
-            <div class="scroll-down-button">
+            <img src="./images/explore.png" class="image-cover" alt="Arannayak" />
+            <div class="scroll-down-button" id="exploreButton">
                 <button class="explore-btn">Explore<a href="#section02"><span class="mt-1"></span></a></button>
+            </div>
+            <div class="overlay" id="myNav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <nav class="overlay-menu">
+                    <div class="container p-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="d-flex align-items-center">
+
+                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
+
+                                    <div>
+                                        <li class="nav-item navbar-brand"><a
+                                                href="./under_construction/under_construction.html"
+                                                class="nav-link">About Arannayk
+                                                Foundation</a></li>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
+                                    <div>
+                                        <li class="nav-item navbar-brand"><a
+                                                href="./under_construction/under_construction.html"
+                                                class="nav-link">Mission, Vision &
+                                                Values</a></li>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
+                                    <div>
+                                        <li class="nav-item navbar-brand"><a
+                                                href="./under_construction/under_construction.html"
+                                                class="nav-link">Board Members</a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
+                                    <div>
+                                        <li class="nav-item navbar-brand"><a
+                                                href="./under_construction/under_construction.html" class="nav-link">Our
+                                                Team</a></li>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
+                                    <div>
+                                        <li class="nav-item navbar-brand"><a
+                                                href="./under_construction/under_construction.html"
+                                                class="nav-link">Timeline</a></li>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
+                                    <div>
+                                        <li class="nav-item navbar-brand"><a
+                                                href="./under_construction/under_construction.html" class="nav-link">Our
+                                                Achievements</a></li>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
+                                    <div>
+                                        <li class="nav-item navbar-brand"><a
+                                                href="./under_construction/under_construction.html" class="nav-link">Our
+                                                Partners &
+                                                Donors</a></li>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
     </section>
 
-    <div class="forest-image">
+    <div class="forest-image" id="section02">
         <br /><br /><br /><br />
         <div class="mb-5 forest-div">
             <p class="heading-text">Forest</p>
         </div>
     </div>
 
-    <section id="section02" class="mt-5 mb-2">
+    <section class="mt-5 mb-2">
         <div class="ms-5 me-5">
             <div class="row">
                 <div class="col-md-4 mb-4">
@@ -311,22 +398,17 @@
         <footer class="footer-style">
             <div class="h-50">
                 <div class="mt-5 p-4 initial-footer">
-                    <!-- <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#!" class="text-decoration-none  text-white">Contact Us
-                        </li>
-                    </ul> -->
 
                     <div class="row">
-                        <div class="col-md-2 col-sm-6">
+                        <div class="col-lg-2 col-md-3 col-sm-12 mb-5 mb-4">
                             <div>
                                 <div>
-                                    <img src="./images/logo_initial.png" alt="" class="logo-img" />
+                                    <img src="./images/logo_initial.png" alt="" class="logo-img img-fluid" />
                                 </div>
                                 <div>
                                     <div class="follow-us">
                                         <p>Follow Us</p>
-                                        <div class="">
+                                        <div class="d-flex">
                                             <a href=""><img src="./images/Vector.png" alt="" /></a>
                                             <a href="" class="img-space"><img src="./images/instagram.png" alt="" /></a>
                                             <a href="" class="img-space"><img src="./images/linkedin.png" alt="" /></a>
@@ -338,58 +420,58 @@
                             </div>
                         </div>
 
-                        <div class="col-md-2 col-sm-6">
+                        <div class="col-lg-2 col-md-3 col-sm-12 mb-4">
                             <div>
                                 <div class="anchor-links">
-                                    <div class="phone-spacing">
-                                        <a href="">Who we are</a>
+                                    <div class="anchor-links__spacing">
+                                        <a href="../under_construction/under_construction.html">Who we are</a>
                                     </div>
 
                                     <div class="anchor-links__spacing">
-                                        <a href="">What we do</a>
+                                        <a href="../under_construction/under_construction.html">What we do</a>
                                     </div>
 
                                     <div class="anchor-links__spacing">
-                                        <a href="">Where we work</a>
+                                        <a href="../under_construction/under_construction.html">Where we work</a>
                                     </div>
 
                                     <div class="anchor-links__spacing">
-                                        <a href="">Media Center</a>
+                                        <a href="../under_construction/under_construction.html">Media Center</a>
                                     </div>
 
                                     <div class="anchor-links__spacing">
-                                        <a href="">Get Involved</a>
+                                        <a href="../under_construction/under_construction.html">Get Involved</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-2 col-sm-12">
+                        <div class="col-lg-2 col-md-3 col-sm-12 mb-4">
                             <div>
                                 <div class="anchor-links">
-                                    <div class="phone-spacing">
-                                        <a href="">Our Team</a>
+                                    <div class="anchor-links__spacing">
+                                        <a href="../under_construction/under_construction.html">Our Team</a>
                                     </div>
 
                                     <div class="anchor-links__spacing">
-                                        <a href="">Knowledge</a>
+                                        <a href="../under_construction/under_construction.html">Knowledge</a>
                                     </div>
 
                                     <div class="anchor-links__spacing">
-                                        <a href="">Give/Donate</a>
+                                        <a href="../under_construction/under_construction.html">Give/Donate</a>
                                     </div>
 
                                     <div class="anchor-links__spacing">
-                                        <a href="">Live Chat</a>
+                                        <a href="../under_construction/under_construction.html">Live Chat</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-2 col-sm-12">
+                        <div class="col-lg-2 col-md-3 col-sm-12 mb-4">
                             <div>
                                 <div class="anchor-links">
-                                    <div class="phone-spacing">
+                                    <div class="anchor-links__spacing">
                                         <a href="">Contact Us</a>
                                     </div>
 
@@ -408,11 +490,11 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-12">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
                             <div class="map-div">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.806406131158!2d90.40327121462444!3d23.754282044545686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b884f8a03817%3A0x4a07adf18ee77ae1!2sGabtola%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1652343373355!5m2!1sen!2sbd"
-                                    width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+                                    width="450" height="300" style="border: 0" allowfullscreen="" loading="lazy"
                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
@@ -436,6 +518,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = '100%';
+            document.getElementById("exploreButton").style.opacity = 0;
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+            document.getElementById("exploreButton").style.opacity = 100;
+        }
+    </script>
+
 </body>
 
 </html>
