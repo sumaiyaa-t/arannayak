@@ -205,6 +205,10 @@ form .search-text {
     color: #fff;
 }
 
+.paragraph-text {
+    text-align: justify;
+  }
+
 
 /*=============== Footer section ===============*/
 .footer-style {
