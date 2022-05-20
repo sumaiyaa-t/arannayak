@@ -246,6 +246,10 @@ form .search-text {
     font-size: 20px;
 }
 
+.img-style{
+    border-radius: 80px;
+}
+
 .text-title {
     color: #fff;
     font-size: 36px;
@@ -389,7 +393,6 @@ form .search-text {
         text-align: left;
     }
 
-    
     .even-member-name {
         text-align: left;
     }
