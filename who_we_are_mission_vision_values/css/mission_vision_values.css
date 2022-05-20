@@ -228,7 +228,7 @@ form .search-text {
 
 }
 
-.circle-left{
+.circle-left {
     background-color: #059C9A;
     width: 460px;
     height: 460px;
@@ -268,7 +268,7 @@ form .search-text {
     justify-content: center;
 }
 
-.title-heading-right{
+.title-heading-right {
     background-color: #059C9A;
     width: 600px;
     height: 120px;
@@ -422,11 +422,11 @@ form .search-text {
         margin-left: 0px;
     }
 
-    .circle-left{
+    .circle-left {
         width: auto;
         height: auto;
         border-radius: 15px;
-        margin-right:  0px;
+        margin-right: 0px;
     }
 
     .image-card {
@@ -450,7 +450,8 @@ form .search-text {
         align-items: center;
         justify-content: center;
     }
-    .title-heading-right{
+
+    .title-heading-right {
         width: auto;
         height: 100px;
         border-top-left-radius: 0px;
@@ -526,11 +527,12 @@ form .search-text {
         margin-left: 0px;
 
     }
-    .circle-left{
+
+    .circle-left {
         width: auto;
         height: auto;
         border-radius: 15px;
-        margin-right:  0px;
+        margin-right: 0px;
     }
 
     .image-card {
@@ -558,11 +560,11 @@ form .search-text {
         margin-left: 0px;
     }
 
-    .circle-left{
+    .circle-left {
         width: auto;
         height: auto;
         border-radius: 15px;
-        margin-right:  0px;
+        margin-right: 0px;
     }
 
     .image-card {
@@ -577,4 +579,103 @@ form .search-text {
         flex-direction: column;
     }
 
+}
+
+@media screen and (min-width: 1400px) {
+
+    /* For Big TV's (HD Screens)  */
+    .circle {
+        width: 540px;
+        height: 540px;
+        margin-left: -180px;
+    }
+
+    .circle-left {
+        width: 540px;
+        height: 540px;
+        margin-right: -180px;
+    }
+
+    .image-card {
+        width: 800px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .title-heading {
+        width: 800px;
+        height: 100px;
+
+    }
+
+    .title-heading-right {
+        width: 800px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    /* For Big TV's (HD Screens)  */
+    .circle {
+        width: 600px;
+        height: 600px;
+        margin-left: -180px;
+    }
+
+    .circle-left {
+        width: 600px;
+        height: 600px;
+        margin-right: -180px;
+    }
+
+    .image-card {
+        width: 900px;
+        height: 540px;
+        object-fit: cover;
+    }
+
+    .title-heading {
+        width: 800px;
+        height: 100px;
+    }
+
+    .title-heading-right {
+        width: 800px;
+        height: 100px;
+
+    }
+}
+
+@media screen and (min-width: 1800px) {
+
+    /* For Big TV's (HD Screens)  */
+    .circle {
+        width: 600px;
+        height: 600px;
+        margin-left: -180px;
+    }
+
+    .circle-left {
+        width: 600px;
+        height: 600px;
+        margin-right: -180px;
+    }
+
+    .image-card {
+        width: 900px;
+        height: 540px;
+        object-fit: cover;
+    }
+
+    .title-heading {
+        width: 1000px;
+        height: 100px;
+    }
+
+    .title-heading-right {
+        width: 1000px;
+        height: 100px;
+
+    }
 }
