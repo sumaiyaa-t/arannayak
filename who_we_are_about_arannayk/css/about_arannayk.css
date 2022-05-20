@@ -200,6 +200,26 @@ form .search-text {
     text-align: justify;
 }
 
+/* About foundation*/
+
+.subcard-text {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.about-us-card {
+    background: #059C9A;
+    box-shadow: 0px 4px 1px 5px #E8EDF0;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.text-foundation {
+    font-size: 25px;
+    font-weight: 100;
+}
+
 /*Latest projects*/
 .project-card {
 
@@ -218,7 +238,6 @@ form .search-text {
     font-weight: 300;
     font-size: 14px;
     text-align: justify;
-
 }
 
 .hr-style {
@@ -233,19 +252,6 @@ form .search-text {
     font-weight: 500;
     font-size: 30px;
     border: none;
-}
-
-.subcard-text {
-    font-weight: 400;
-    font-size: 18px;
-    text-align: justify;
-}
-
-.about-us-card {
-    background: #059C9A;
-    box-shadow: 0px 4px 1px 5px #E8EDF0;
-    border-radius: 50px;
-    color: #fff;
 }
 
 /* Card slider*/
@@ -278,15 +284,36 @@ form .search-text {
     flex-grow: 1;
 }
 
-/* .thumbnail {
-    padding: 15px;
-    border-radius: 50px;
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-} */
+.owl-nav button.owl-prev {
+    left: 0;
+}
+
+.owl-nav button.owl-next {
+    right: 0;
+}
+
+.owl-dots {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.owl-dots button.owl-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #059c9a;
+    margin: 0 5px;
+    border: none;
+}
+
+.owl-dots button.owl-dot.active {
+    background-color: #024A4A;
+}
 
 .slider-section {
     margin: 10px;
+
 }
 
 /* --------------------- carousal code --------------------------- */
@@ -342,8 +369,6 @@ form .search-text {
 }
 
 .card-img-top {
-
-
     object-fit: cover;
 }
 
