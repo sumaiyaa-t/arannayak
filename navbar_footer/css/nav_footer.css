@@ -93,6 +93,18 @@ form .search-text {
 
 }
 
+.navbar-link {
+    cursor: pointer;
+}
+
+.navbar-link:hover {
+    color: #024A4A !important;
+    background: #fff;
+    display: block;
+    border-radius: 50px;
+    box-shadow: 0px, 4px #E8EDF0;
+}
+
 
 /*=============== Forest hero section ===============*/
 
