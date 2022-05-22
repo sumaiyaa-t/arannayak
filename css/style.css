@@ -1,18 +1,28 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700&display=swap');
 /*=============== BASE ===============*/
 
 * {
   box-sizing: border-box;
   margin: 0;
-}
-
-html body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'M PLUS 1p', sans-serif;
 }
 
 /*=============== NAVBAR ===============*/
+.logo-button {
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0px 3px 24px rgba(0, 0, 0, 0.68);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border: none;
+  width: 180px;
+  height: 65px;
+}
+
+.logo-image {
+  width: auto;
+  height: 55px;
+}
 
 .top-nav {
   background-color: #059c9a;
@@ -30,7 +40,7 @@ html body {
 
 nav .navbar-nav li a {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #fff !important;
 }
 
@@ -40,7 +50,7 @@ li {
 
 li a {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #fff !important;
 
 }
@@ -73,7 +83,7 @@ form .search-text {
   border-radius: 50px;
 }
 
-form .search-text:hover{
+form .search-text:hover {
   color: #fff;
 }
 
@@ -103,23 +113,28 @@ input[type="search"]::-webkit-search-cancel-button {
   background-color: #024a4a;
 }
 
-.dropdown-menu{
+.dropdown-menu {
   background-color: #024a4a;
   border: none;
 }
 
-.divider-style{
+.divider-style {
   background-color: #059c9a;
 
 }
+
 /* Language */
 .vr-style {
   color: #fff;
   margin-top: 10px;
-  height: 30px;
+  height: 25px;
   width: 2px;
   background-color: #fff;
+}
 
+.language-style {
+  border: 1px solid #fff;
+  border-radius: 17px;
 }
 
 .navbar-link {
@@ -129,9 +144,9 @@ input[type="search"]::-webkit-search-cancel-button {
 .navbar-link:hover {
   color: #024A4A !important;
   background: #fff;
+  box-shadow: 0px 4px 1px 5px #E8EDF0;
   display: block;
   border-radius: 50px;
-  box-shadow: 0px, 4px #E8EDF0;
 }
 
 /*=============== Forest hero section ===============*/
@@ -156,6 +171,11 @@ input[type="search"]::-webkit-search-cancel-button {
   color: #f1f1f1;
   text-decoration: none;
 }
+
+.overlay-text {
+  line-height: 80px;
+}
+
 
 /* Container needed to position the button. Adjust the width as needed */
 .image-container {
@@ -247,6 +267,17 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .paragraph-text {
   text-align: justify;
+  margin-top: 2rem;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.section-image {
+  border-radius: 15px;
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+
 }
 
 /*=============== Sustainability section ===============*/
@@ -342,7 +373,7 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 
   .overlay {
-   display:none;
+    display: none;
   }
 
   /* Forest Section */
@@ -416,19 +447,60 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 300px;
     height: 300px;
   }
+
+  .overlay {
+    display: none;
+  }
+
+  .language-style {
+    border: none;
+  }
+
+  .section-image {
+    border-radius: 15px;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .paragraph-text {
+    margin-top: 1rem;
+  }
+
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 991px) {
+
+  .overlay {
+    display: none;
+  }
+
+  .navbar-link:hover {
+    color: #fff !important;
+    background: none;
+    box-shadow: none;
+  }
+
+  .language-style {
+    border: none;
+  }
+
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
 
   /* For landscape layouts only */
   .map-div {
     width: 300px;
     height: 300px;
   }
-  .overlay {
-    display:none;
-   }
 
+  .section-image {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+
+  }
 }
 
 
