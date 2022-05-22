@@ -9,17 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css" />
-
     <!--==================== FONT AWESOME ====================-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="./css/about_arannayk.css" />
+    <link rel="stylesheet" href="./css/nav_footer.css" />
 
     <title>Arannayk</title>
 </head>
@@ -31,8 +25,9 @@
         <nav class="navbar navbar-expand-lg navbar-light pb-0 top-nav">
             <div class="container-fluid">
                 <!--ARANNAYAK-->
-                <a href="../index.html" class="navbar-brand">
-                    <img class="nav-heading" src="./images/logo/image 5.png"></img>
+                <a href="./index.html">
+                    <!-- <img class="nav-heading" src="./images/logo/image 5.png"></img> -->
+                    <button class="logo-button"><img src="../images/logo/image 5.png" class="logo-image"></button>
                 </a>
 
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -54,12 +49,14 @@
 
                         <!--Climate Change-->
                         <li class="nav-item navbar-brand p-md-2">
-                            <a href="../climate_change/climate_change.html" class="nav-link navbar-link">Climate Change</a>
+                            <a href="../climate_change/climate_change.html" class="nav-link navbar-link">Climate
+                                Change</a>
                         </li>
 
                         <!--Sustainability-->
                         <li class="nav-item navbar-brand p-md-2">
-                            <a href="../sustainability/sustainability.html" class="nav-link navbar-link">Sustainability</a>
+                            <a href="../sustainability/sustainability.html"
+                                class="nav-link navbar-link">Sustainability</a>
                         </li>
 
                         <!--Gender-->
@@ -94,47 +91,146 @@
                     <ul class="nav navbar-nav mx-auto">
                         <!--Who we are -->
                         <li class="nav-item navbar-brand who-we p-md-2">
-                            <a onmouseover="openNav1()"
-                                onclick="closeNav()" class="nav-link navbar-link">Who we are
+                            <a onmouseover="openNav1()" onclick="closeNav()" class="nav-link navbar-link">Who we are
                             </a>
+                            <i class="fas fa-plus-circle d-lg-none" data-bs-toggle="dropdown"></i>
+
+                            <div class="dropdown-menu">
+                                <a href="../who_we_are_about_arannayk/about_arannayk.html" class="dropdown-item">About
+                                    Arannayk Foundation</a>
+                                <div class="dropdown-divider divider-style"></div>
+
+                                <a href="../who_we_are_mission_vision_values/mission_vision_values.html"
+                                    class="dropdown-item">Mission, Vision & Values</a>
+                                <div class="dropdown-divider divider-style"></div>
+
+                                <a href="../who_we_are_board_members/board_members.html" class="dropdown-item">Board
+                                    Members</a>
+                                <div class="dropdown-divider divider-style"></div>
+
+                                <a href="../who_we_are_our_team/our_team.html" class="dropdown-item">Our Team</a>
+                                <div class="dropdown-divider divider-style"></div>
+
+                                <a href="../under_construction/under_construction.html" class="dropdown-item">Our
+                                    Achievements</a>
+                                <div class="dropdown-divider divider-style"></div>
+
+                                <a href="../under_construction/under_construction.html"
+                                    class="dropdown-item">Timeline</a>
+                                <div class="dropdown-divider divider-style"></div>
+
+                                <a href="../under_construction/under_construction.html" class="dropdown-item">Our
+                                    Partners & Donors</a>
+                            </div>
                         </li>
 
                         <!--What we do-->
                         <li class="nav-item navbar-brand p-md-2">
-                            <a onmouseover="openNav2()"
-                                onclick="closeNav()" class="nav-link navbar-link">What we do</a>
+                            <a onmouseover="openNav2()" onclick="closeNav()" class="nav-link navbar-link">What we do</a>
+                            <i class="fas fa-plus-circle d-lg-none" data-bs-toggle="dropdown"></i>
+
+                            <div class="dropdown-menu">
+                                <a href="../under_construction/under_construction.html" class="dropdown-item">Our
+                                    Services</a>
+                                <div class="dropdown-divider divider-style"></div>
+
+                                <a href="../under_construction/under_construction.html" class="dropdown-item">Current
+                                    Projects</a>
+                                <div class="dropdown-divider divider-style"></div>
+
+                                <a href="../under_construction/under_construction.html" class="dropdown-item">Project
+                                    Archives</a>
+                            </div>
                         </li>
 
                         <!--Where we work-->
                         <li class="nav-item navbar-brand p-md-2">
-                            <a href="../under_construction/under_construction.html" onclick="closeNav()"
-                                class="nav-link navbar-link">Where we work</a>
+                            <a onmouseover="openNav3()" onclick="closeNav()" class="nav-link navbar-link">Where we
+                                work</a>
+                            <i class="fas fa-plus-circle d-lg-none" data-bs-toggle="dropdown"></i>
+
+                            <div class="dropdown-menu">
+                                <a href="../under_construction/under_construction.html" class="dropdown-item">Map</a>
+                            </div>
                         </li>
 
                         <!--Give/ Donate -->
                         <li class="nav-item navbar-brand p-md-2">
-                            <a href="../under_construction/under_construction.html" onclick="closeNav()"
-                                class="nav-link navbar-link">Give/Donate
+                            <a onmouseover="openNav4()" onclick="closeNav()" class="nav-link navbar-link">Give/Donate
                             </a>
+                            <i class="fas fa-plus-circle d-lg-none" data-bs-toggle="dropdown"></i>
+
+                            <div class="dropdown-menu">
+                                <a href="../under_construction/under_construction.html" class="dropdown-item">Donate</a>
+                            </div>
                         </li>
 
                         <!--Get Involved -->
                         <li class="nav-item navbar-brand p-md-2">
-                            <a onmouseover="openNav5()"
-                                onclick="closeNav()" class="nav-link navbar-link">Get Involved
+                            <a onmouseover="openNav5()" onclick="closeNav()" class="nav-link navbar-link">Get Involved
                             </a>
+                            <i class="fas fa-plus-circle d-lg-none" data-bs-toggle="dropdown"></i>
+
+                            <div class="dropdown-menu">
+                                <a href="../under_construction/under_construction.html" class="dropdown-item">Career</a>
+                                <div class="dropdown-divider divider-style"></div>
+
+                                <a href="../under_construction/under_construction.html"
+                                    class="dropdown-item">Consultancy</a>
+                                <div class="dropdown-divider divider-style"></div>
+
+                                <a href="../under_construction/under_construction.html"
+                                    class="dropdown-item">Internship</a>
+                                <div class="dropdown-divider divider-style"></div>
+
+                                <a href="../under_construction/under_construction.html"
+                                    class="dropdown-item">Procurement</a>
+                            </div>
                         </li>
 
                         <!--Media Center-->
                         <li class="nav-item navbar-brand p-md-2">
-                            <a onmouseover="openNav6()"
-                                onclick="closeNav()" class="nav-link navbar-link">Media Center</a>
+                            <a onmouseover="openNav6()" onclick="closeNav()" class="nav-link navbar-link">Media
+                                Center</a>
+                            <i class="fas fa-plus-circle d-lg-none" data-bs-toggle="dropdown"></i>
+
+                            <div class="dropdown-menu">
+                                <a href="../under_construction/under_construction.html" class="dropdown-item">Press
+                                    Release</a>
+                                <div class="dropdown-divider divider-style"></div>
+
+                                <a href="../under_construction/under_construction.html" class="dropdown-item">Media
+                                    Coverage</a>
+                                <div class="dropdown-divider divider-style"></div>
+
+                                <a href="../under_construction/under_construction.html" class="dropdown-item">Activity
+                                    Updates</a>
+                                <div class="dropdown-divider divider-style"></div>
+
+                                <a href="../under_construction/under_construction.html" class="dropdown-item">Photos</a>
+                                <div class="dropdown-divider divider-style"></div>
+
+                                <a href="../under_construction/under_construction.html" class="dropdown-item">Video
+                                    Stories</a>
+                                <div class="dropdown-divider divider-style"></div>
+
+                                <a href="../under_construction/under_construction.html" class="dropdown-item">Blogs</a>
+                            </div>
                         </li>
 
                         <!--Knowledge -->
                         <li class="nav-item navbar-brand p-md-2">
-                            <a onmouseover="openNav7()"
-                                onclick="closeNav()" class="nav-link navbar-link">Knowledge</a>
+                            <a onmouseover="openNav7()" onclick="closeNav()" class="nav-link navbar-link">Knowledge</a>
+                            <i class="fas fa-plus-circle d-lg-none" data-bs-toggle="dropdown"></i>
+
+                            <div class="dropdown-menu">
+                                <a href="../under_construction/under_construction.html"
+                                    class="dropdown-item">Publications</a>
+                                <div class="dropdown-divider divider-style"></div>
+
+                                <a href="../under_construction/under_construction.html" class="dropdown-item">Tools &
+                                    Data</a>
+                            </div>
                         </li>
                         <ul class="navbar-nav nav-item navbar-brand  p-md-2 ">
                             <div class="d-flex flex-row language-style">
@@ -181,7 +277,7 @@
 
                                     <div>
                                         <li class="nav-item navbar-brand"><a
-                                                href="./about_arannayk.html"
+                                                href="../who_we_are_about_arannayk/about_arannayk.html"
                                                 class="nav-link">About Arannayk
                                                 Foundation</a></li>
                                     </div>
@@ -210,8 +306,7 @@
                                 <div class="d-flex align-items-center">
                                     <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
                                     <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../who_we_are_our_team/our_team.html"
+                                        <li class="nav-item navbar-brand"><a href="../who_we_are_our_team/our_team.html"
                                                 class="nav-link">Our Team</a></li>
                                     </div>
                                 </div>
@@ -278,7 +373,7 @@
                                     <div>
                                         <li class="nav-item navbar-brand"><a
                                                 href="../under_construction/under_construction.html" class="nav-link">
-                                                Current projects</a></li>
+                                                Current Projects</a></li>
                                     </div>
                                 </div>
 
@@ -291,7 +386,7 @@
                                     <div>
                                         <li class="nav-item navbar-brand"><a
                                                 href="../under_construction/under_construction.html" class="nav-link">
-                                                Project archives</a></li>
+                                                Project Archives</a></li>
                                     </div>
                                 </div>
 
@@ -315,37 +410,11 @@
 
                                     <div>
                                         <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
+                                                href="../under_construction/under_construction.html"
+                                                class="nav-link">Map
                                             </a></li>
                                     </div>
                                 </div>
-
-
-                            </div>
-
-                            <div class="col-md-4">
-
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                            </a></li>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                            </a></li>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </div>
@@ -367,62 +436,7 @@
                                     <div>
                                         <li class="nav-item navbar-brand"><a
                                                 href="../under_construction/under_construction.html" class="nav-link">
-                                            </a></li>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                            </a></li>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                            </a>
-                                        </li>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                            </a></li>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                            </a></li>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                            </a></li>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                            </a></li>
+                                                Donate</a></li>
                                     </div>
                                 </div>
                             </div>
@@ -501,7 +515,7 @@
                                     <div>
                                         <li class="nav-item navbar-brand"><a
                                                 href="../under_construction/under_construction.html" class="nav-link">
-                                                Press release</a></li>
+                                                Press Release</a></li>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -509,7 +523,7 @@
                                     <div>
                                         <li class="nav-item navbar-brand"><a
                                                 href="../under_construction/under_construction.html" class="nav-link">
-                                                Media coverage </a></li>
+                                                Media Coverage </a></li>
                                     </div>
                                 </div>
 
@@ -521,7 +535,7 @@
                                     <div>
                                         <li class="nav-item navbar-brand"><a
                                                 href="../under_construction/under_construction.html" class="nav-link">
-                                                Activity updates</a></li>
+                                                Activity Updates</a></li>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -540,7 +554,7 @@
                                     <div>
                                         <li class="nav-item navbar-brand"><a
                                                 href="../under_construction/under_construction.html" class="nav-link">
-                                                Video stories</a></li>
+                                                Video Stories</a></li>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -588,7 +602,6 @@
                                                 Tools & Data</a></li>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -596,294 +609,13 @@
             </div>
         </div>
     </section>
-    <div class="forest-div" id="section02">
-        <div class="forest-text-style">
-            <p class="heading-text">About Arannayk Foundation</p>
+
+    <div class="forest-image" id="section02">
+        <br /><br /><br /><br />
+        <div class="mb-5 forest-div">
+            <p class="heading-text">Forest</p>
         </div>
     </div>
-
-    <!--About Foundation-->
-    <section class="mt-5 mb-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img src="./images/about_us.png" class="mx-auto d-block img-fluid" width="280">
-                    <p class="mt-3 text-center text-foundation">Arannayk Foundation</p>
-                    <p class="mt-3 text-center text-foundation">Conserving Forests for the Future</p>
-
-                </div>
-                <div class="col-lg-6">
-                    <div class="container about-us-card">
-                        <div class="card-body">
-                            <p class="subcard-text mt-3">Arannayk Foundation, also known as the Bangladesh Tropical Forest Conservation
-                                Foundation, is a not-for-profit organization established in 2003 by the joint initiative of
-                                the Governments of the People&#39;s Republic of Bangladesh and the United States of
-                                America. Arannayk Foundation is registered as a not-for-profit company limited by
-                                guarantee (Reg. No.C-550 (02)/2003) and not having a share capital under section
-                                28 of the Bangladesh Companies Act 1994.
-                                Arannayk Foundation promotes conservation, protection, restoration and sustainable
-                                use of tropical forests in Bangladesh. It provides financial and technical assistance to
-                                organizations involved in forests and biodiversity conservation. It also implements
-                                projects financed by the other development partners.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Latest Projects-->
-
-    <section id="section03" class="mt-5 mb-2">
-        <div class="top-heading mb-5">
-            <p class="heading-text">Latest Projects</p>
-        </div>
-
-
-        <div class="row mt-5 mx-auto">
-
-            <div class="col-md-6 mb-4 p-md-4">
-                <div class="card project-card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <img src="./images/biodiversity.png" class="d-block mx-auto project-image img-fluid mt-lg-4 mb-3">
-                            </div>
-                            <div class="col-lg-8">
-                                <p class="card-subheading">Heading</p>
-                                <hr class="hr-style">
-                                <p class="card-text">Mangrove forests, also called mangrove swamps, mangrove
-                                    thickets or mangals, are productive wetlands that occur in coastal intertidal
-                                    zones. Mangrove forests grow mainly at tropical and subtropical latitudes</p>
-                                <hr class="hr-style">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 mb-4 p-md-4">
-                <div class="card project-card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <img src="./images/biodiversity.png" class="d-block mx-auto project-image img-fluid mt-lg-4 mb-3">
-                            </div>
-                            <div class="col-lg-8">
-                                <p class="card-subheading">Heading</p>
-                                <hr class="hr-style">
-                                <p class="card-text">Mangrove forests, also called mangrove swamps, mangrove
-                                    thickets or mangals, are productive wetlands that occur in coastal intertidal
-                                    zones. Mangrove forests grow mainly at tropical and subtropical latitudes</p>
-                                <hr class="hr-style">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 mb-4 p-md-4">
-                <div class="card project-card ">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <img src="./images/biodiversity.png" class="d-block mx-auto project-image img-fluid mt-lg-4 mb-3">
-                            </div>
-                            <div class="col-lg-8">
-                                <p class="card-subheading">Heading</p>
-                                <hr class="hr-style">
-                                <p class="card-text">Mangrove forests, also called mangrove swamps, mangrove
-                                    thickets or mangals, are productive wetlands that occur in coastal intertidal
-                                    zones. Mangrove forests grow mainly at tropical and subtropical latitudes</p>
-                                <hr class="hr-style">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 mb-4 p-md-4">
-                <div class="card project-card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <img src="./images/big_city_facades_view_239170.jpg" class="d-block mx-auto project-image img-fluid mt-lg-4 mb-3">
-                            </div>
-                            <div class="col-lg-8">
-                                <p class="card-subheading">Heading</p>
-                                <hr class="hr-style">
-                                <p class="card-text">Mangrove forests, also called mangrove swamps, mangrove
-                                    thickets or mangals, are productive wetlands that occur in coastal intertidal
-                                    zones. Mangrove forests grow mainly at tropical and subtropical latitudes</p>
-                                <hr class="hr-style">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="text-center">
-            <a href="#"><button type="button" class="section-button px-4 py-2 mt-5 mb-4">Explore More
-                    Projects</button></a>
-        </div>
-    </section>
-
-    <!--Related Publications-->
-
-    <section id="section03" class="mt-5 mb-2">
-        <div class="top-heading mb-5">
-            <p class="heading-text">Related Publications</p>
-        </div>
-
-        <div>
-            <div class="slider-section">
-                <div class="container-fluid">
-                    <div id="owl-demo-2" class="owl-carousel">
-                        <article class="card project-card thumbnail item mb-4">
-                            <a href="#!">
-                                <img src="./images/0 4.png" class="slider-image img-fluid" />
-                            </a>
-                            <div class="caption p-4">
-                                <h4 class="card-subheading">Heading</h4>
-                                <hr class="hr-style" />
-                                <p class="card-text">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Aspernatur debitis obcaecati sint doloremque unde hic aliquid!
-                                    Aspernatur, quia debitis. Doloribus odio quia ratione id
-                                    laudantium adipisci distinctio, placeat quos accusamus?
-                                </p>
-                                <hr class="hr-style" />
-
-                                <!-- <a class="btn btn-primary btn-block">Button Text</a> -->
-                            </div>
-                        </article>
-
-                        <article class="thumbnail item card project-card mb-4">
-                            <a href="#!">
-                                <img src="./images/0 4.png" class="slider-image img-fluid" />
-                            </a>
-                            <div class="caption p-4">
-                                <h4 class="card-subheading">Heading</h4>
-                                <hr class="hr-style" />
-                                <p class="card-text">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Aspernatur debitis obcaecati sint doloremque unde hic aliquid!
-                                    Aspernatur, quia debitis. Doloribus odio quia ratione id
-                                    laudantium adipisci distinctio, placeat quos accusamus?
-                                </p>
-                                <hr class="hr-style" />
-
-                                <!-- <a class="btn btn-primary btn-block">Button Text</a> -->
-                            </div>
-                        </article>
-
-                        <article class="thumbnail item card project-card mb-4">
-                            <a href="#!">
-                                <img src="./images/0 4.png" class="slider-image img-fluid" />
-                            </a>
-                            <div class="caption p-4">
-                                <h4 class="card-subheading">Heading</h4>
-                                <hr class="hr-style" />
-                                <p class="card-text">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Aspernatur debitis obcaecati sint doloremque unde hic aliquid!
-                                    Aspernatur, quia debitis. Doloribus odio quia ratione id
-                                    laudantium adipisci distinctio, placeat quos accusamus?
-                                </p>
-                                <hr class="hr-style" />
-
-                                <!-- <a class="btn btn-primary btn-block">Button Text</a> -->
-                            </div>
-                        </article>
-
-                        <article class="thumbnail item card project-card mb-4">
-                            <a href="#!">
-                                <img src="./images/0 4.png" class="slider-image img-fluid" />
-                            </a>
-                            <div class="caption p-4">
-                                <h4 class="card-subheading">Heading</h4>
-                                <hr class="hr-style" />
-                                <p class="card-text">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Aspernatur debitis obcaecati sint doloremque unde hic aliquid!
-                                    Aspernatur, quia debitis. Doloribus odio quia ratione id
-                                    laudantium adipisci distinctio, placeat quos accusamus?
-                                </p>
-                                <hr class="hr-style" />
-
-                                <!-- <a class="btn btn-primary btn-block">Button Text</a> -->
-                            </div>
-                        </article>
-
-                        <article class="thumbnail item card project-card mb-4">
-                            <a href="#!">
-                                <img src="./images/0 4.png" class="slider-image img-fluid" />
-                            </a>
-                            <div class="caption p-4">
-                                <h4 class="card-subheading">Heading</h4>
-                                <hr class="hr-style" />
-                                <p class="card-text">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Aspernatur debitis obcaecati sint doloremque unde hic aliquid!
-                                    Aspernatur, quia debitis. Doloribus odio quia ratione id
-                                    laudantium adipisci distinctio, placeat quos accusamus?
-                                </p>
-                                <hr class="hr-style" />
-
-                                <!-- <a class="btn btn-primary btn-block">Button Text</a> -->
-                            </div>
-                        </article>
-
-                        <article class="thumbnail item card project-card mb-4">
-                            <a href="#!">
-                                <img src="./images/0 4.png" class="slider-image img-fluid" />
-                            </a>
-                            <div class="caption p-4">
-                                <h4 class="card-subheading">Heading</h4>
-                                <hr class="hr-style" />
-                                <p class="card-text">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Aspernatur debitis obcaecati sint doloremque unde hic aliquid!
-                                    Aspernatur, quia debitis. Doloribus odio quia ratione id
-                                    laudantium adipisci distinctio, placeat quos accusamus?
-                                </p>
-                                <hr class="hr-style" />
-
-                                <!-- <a class="btn btn-primary btn-block">Button Text</a> -->
-                            </div>
-                        </article>
-
-                        <article class="thumbnail item card project-card mb-4">
-                            <a href="#!">
-                                <img src="./images/0 4.png" class="slider-image img-fluid" />
-                            </a>
-                            <div class="caption p-4">
-                                <h4 class="card-subheading">Heading</h4>
-                                <hr class="hr-style" />
-                                <p class="card-text">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Aspernatur debitis obcaecati sint doloremque unde hic aliquid!
-                                    Aspernatur, quia debitis. Doloribus odio quia ratione id
-                                    laudantium adipisci distinctio, placeat quos accusamus?
-                                </p>
-                                <hr class="hr-style" />
-                                <!-- <a class="btn btn-primary btn-block">Button Text</a> -->
-                            </div>
-                        </article>
-                    </div>
-                    <!-- #owl-demo-2 -->
-                </div>
-                <!-- .container -->
-
-            </div>
-        </div>
-        <div class="text-center">
-            <a href="#"><button type="button" class="section-button mt-5 mb-4 px-4 py-2">Explore More
-                    Publications</button></a>
-        </div>
-    </section>
 
     <!--==================== FOOTER SECTION ====================-->
 
@@ -896,7 +628,7 @@
                         <div class="col-lg-2 col-md-3 col-sm-12 mb-5 mb-4">
                             <div>
                                 <div>
-                                    <img src="./images/logo/logo.png" alt="" class="logo-img img-fluid" />
+                                    <img src="./images/logo_initial.png" alt="" class="logo-img img-fluid" />
                                 </div>
                                 <div>
                                     <div class="follow-us">
@@ -1116,14 +848,7 @@
             document.getElementById("exploreButton").style.opacity = 0;
         }
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.0/jquery-migrate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-    <script src="./js/image_slider.js"></script>
 </body>
 
 </html>
