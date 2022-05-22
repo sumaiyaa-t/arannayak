@@ -7,6 +7,9 @@
   margin: 0;
   font-family: 'M PLUS 1p', sans-serif;
 }
+body{
+    background-color: #059c9a;
+}
 
 /*=============== NAVBAR ===============*/
 
