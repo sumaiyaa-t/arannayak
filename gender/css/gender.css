@@ -429,6 +429,24 @@ input[type="search"]::-webkit-search-cancel-button {
     }
 }
 
+@media only screen and (min-device-width: 481px) and (max-device-width: 991px) {
+
+    .overlay {
+      display: none;
+    }
+  
+    .navbar-link:hover {
+      color: #fff !important;
+      background: none;
+      box-shadow: none;
+    }
+  
+    .language-style {
+      border: none;
+    }
+  
+  }
+  
 
 
 /*=============== All sections ===============*/

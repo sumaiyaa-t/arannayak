@@ -387,6 +387,11 @@ input[type="search"]::-webkit-search-cancel-button {
         background-repeat: repeat;
     }
 
+    /* All Section */
+    .heading-text {
+        font-size: 35px;
+    }
+
     .overlay {
         display: none;
     }
@@ -414,6 +419,7 @@ input[type="search"]::-webkit-search-cancel-button {
     }
 }
 
+
 /* --------------------------------------------- media screen for tab (pro) portrait ------------------------------------------- */
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1254px) {
@@ -436,5 +442,21 @@ input[type="search"]::-webkit-search-cancel-button {
         display: none;
     }
 }
+@media only screen and (min-device-width: 481px) and (max-device-width: 991px) {
 
-
+    .overlay {
+      display: none;
+    }
+  
+    .navbar-link:hover {
+      color: #fff !important;
+      background: none;
+      box-shadow: none;
+    }
+  
+    .language-style {
+      border: none;
+    }
+  
+  }
+  
