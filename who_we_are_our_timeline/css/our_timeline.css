@@ -337,6 +337,10 @@ input[type="search"]::-webkit-search-cancel-button {
 
     /* -----------Navbar------------ */
 
+    .language-style {
+      border: none;
+    }
+
     .nav-heading {
         font-weight: 700;
     }

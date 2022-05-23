@@ -3,14 +3,26 @@
 /*=============== BASE ===============*/
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: 'M PLUS 1p', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'M PLUS 1p', sans-serif;
 }
-body{
-    background-color: #059c9a;
-}
+
 /*=============== NAVBAR ===============*/
+.logo-button {
+    background: rgba(255, 255, 255, 0.86);
+    box-shadow: 0px 3px 24px rgba(0, 0, 0, 0.68);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: none;
+    width: 180px;
+    height: 65px;
+}
+
+.logo-image {
+    width: auto;
+    height: 55px;
+}
 
 .top-nav {
     background-color: #059c9a;
@@ -28,7 +40,7 @@ body{
 
 nav .navbar-nav li a {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     color: #fff !important;
 }
 
@@ -38,7 +50,7 @@ li {
 
 li a {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     color: #fff !important;
 
 }
@@ -71,12 +83,6 @@ form .search-text {
     border-radius: 50px;
 }
 
-form .search-text {
-    color: #fff;
-    background-color: #056c6c;
-    border-radius: 50px;
-}
-
 form .search-text:hover {
     color: #fff;
 }
@@ -92,6 +98,11 @@ input[type="search"]::-webkit-search-cancel-button {
     -webkit-box-shadow: none;
 }
 
+.has-error .form-control:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
 #searchID {
     background-color: #056c6c;
     color: #fff;
@@ -102,14 +113,28 @@ input[type="search"]::-webkit-search-cancel-button {
     background-color: #024a4a;
 }
 
+.dropdown-menu {
+    background-color: #024a4a;
+    border: none;
+}
+
+.divider-style {
+    background-color: #059c9a;
+
+}
+
 /* Language */
 .vr-style {
     color: #fff;
     margin-top: 10px;
-    height: 30px;
+    height: 25px;
     width: 2px;
     background-color: #fff;
+}
 
+.language-style {
+    border: 1px solid #fff;
+    border-radius: 17px;
 }
 
 .navbar-link {
@@ -119,13 +144,12 @@ input[type="search"]::-webkit-search-cancel-button {
 .navbar-link:hover {
     color: #024A4A !important;
     background: #fff;
+    box-shadow: 0px 4px 1px 5px #E8EDF0;
     display: block;
     border-radius: 50px;
-    box-shadow: 0px, 4px #E8EDF0;
 }
 
-
-/*=============== Forest hero section ===============*/
+/*=============== Forest hero section (Nav overlay) ===============*/
 
 .overlay {
     height: 100%;
@@ -147,6 +171,11 @@ input[type="search"]::-webkit-search-cancel-button {
     color: #f1f1f1;
     text-decoration: none;
 }
+
+.overlay-text {
+    line-height: 80px;
+}
+
 
 /* Container needed to position the button. Adjust the width as needed */
 .image-container {
@@ -195,6 +224,7 @@ input[type="search"]::-webkit-search-cancel-button {
     -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);
     box-sizing: border-box;
+
 }
 
 .forest-text-style {
@@ -208,70 +238,21 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* Forest Div */
 .forest-div {
-    /* background-color:#024a4a; */
     background-image: url(../images/explore.png);
     box-shadow: inset 0 0 2000px rgba(2, 74, 74, 0.6);
 }
 
-/*=============== All sections ===============*/
-
-.top-heading {
-    background-color: #024a4a;
+.forest-image {
+    background-size: cover;
+    position: relative;
+    margin-top: -120;
+    background-image: url("../images/forest.png");
+    background-position: center;
+    background-repeat: repeat;
 }
 
-.heading-text {
-    font-weight: 500;
-    font-size: 40px;
-    text-align: center;
-    color: #fff;
-}
+/*=============Nav Overlay ends here ======================*/
 
-.paragraph-text {
-    text-align: justify;
-}
-
-/*=============== Board Members sections ===============*/
-
-.odd-member-name {
-    color: #fff;
-    text-align: center;
-    font-size: 30px;
-}
-
-.odd-member-details {
-    color: #fff;
-    text-align: justify;
-    font-size: 20px;
-}
-
-.second-section {
-    background-color: #fff;
-}
-
-.third-section{
-    background-color: #024A4A;
-}
-
-.even-member-name {
-    color: #024A4A;
-    text-align: center;
-    font-size: 30px;
-}
-
-.even-member-details {
-    color: #024A4A;
-    text-align: justify;
-    font-size: 20px;
-}
-
-.img-style{
-    border-radius: 50%;
-}
-
-.text-title {
-    color: #fff;
-    font-size: 36px;
-}
 
 /*=============== Footer section ===============*/
 .footer-style {
@@ -340,11 +321,13 @@ input[type="search"]::-webkit-search-cancel-button {
     color: white;
 }
 
+/*=============== Media screen for Nav & Footer ===============*/
+
 /*=============== Media screen for mobile devices ===============*/
 
 @media only screen and (max-width: 600px) {
 
-    /* Navbar */
+    /* -----------Navbar------------ */
 
     .nav-heading {
         font-weight: 700;
@@ -380,11 +363,6 @@ input[type="search"]::-webkit-search-cancel-button {
         font-size: 35px;
     }
 
-    /* Forest Div */
-    .forest-div {
-        border: none;
-        background-color: #024a4a;
-    }
 
     .forest-image {
         position: relative;
@@ -394,28 +372,12 @@ input[type="search"]::-webkit-search-cancel-button {
         background-repeat: repeat;
     }
 
-    /* All Section */
-    .heading-text {
-        font-size: 35px;
+    .overlay {
+        display: none;
     }
 
-    .section-button {
-        font-size: 24px;
-    }
-    
-    .text-title {
-        font-size: 30px;
-    }
 
-    .odd-member-name {
-        text-align: left;
-    }
-
-    .even-member-name {
-        text-align: left;
-    }
-
-    /* Footer */
+    /*------------------ Footer -------------------*/
     .footer-style {
         height: 0px;
     }
@@ -435,15 +397,20 @@ input[type="search"]::-webkit-search-cancel-button {
         width: 300px;
         height: 300px;
     }
+    .language-style {
+        border: none;
+      }
 }
 
-@media only screen and (max-width: 600px) {
+/* --------------------------------------------- media screen for tab (pro) portrait ------------------------------------------- */
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1254px) {
     .map-div {
-        margin-top: 10%;
         width: 300px;
         height: 300px;
     }
 }
+
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
 
@@ -453,30 +420,134 @@ input[type="search"]::-webkit-search-cancel-button {
         height: 300px;
     }
 
-}
-
-
-/* --------------------------------------------- media screen for tab (pro) portrait ------------------------------------------- */
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1254px) {
-    .map-div {
-        width: 300px;
-        height: 300px;
+    .overlay {
+        display: none;
     }
-    
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 991px) {
+
+    .overlay {
+        display: none;
+    }
+
+    .navbar-link:hover {
+        color: #fff !important;
+        background: none;
+        box-shadow: none;
+    }
+
+    .language-style {
+        border: none;
+    }
 
 }
+
+/*=============== All sections ===============*/
+
+.top-heading {
+    background-color: #024a4a;
+}
+
+.heading-text {
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.paragraph-text {
+    text-align: justify;
+}
+
+/*=============== Board Members sections ===============*/
+
+body{
+    background-color: #059c9a;
+}
+
+.odd-member-name {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+.odd-member-details {
+    color: #fff;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.second-section {
+    background-color: #fff;
+}
+
+.third-section {
+    background-color: #024A4A;
+}
+
+.even-member-name {
+    color: #024A4A;
+    text-align: center;
+    font-size: 30px;
+}
+
+.even-member-details {
+    color: #024A4A;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.img-style {
+    border-radius: 50%;
+}
+
+.text-title {
+    color: #fff;
+    font-size: 36px;
+}
+
+
+
+/*=============== Media screen for mobile devices ===============*/
+
+@media only screen and (max-width: 600px) {
+
+
+    /* All Section */
+    .heading-text {
+        font-size: 35px;
+    }
+
+    .section-button {
+        font-size: 24px;
+    }
+
+    .text-title {
+        font-size: 30px;
+    }
+
+    .odd-member-name {
+        text-align: left;
+    }
+
+    .even-member-name {
+        text-align: left;
+    }
+
+    /* Footer */
+    .footer-style {
+        height: 0px;
+    }
+
+
+}
+
 
 /* --------------------------------------------- media screen for tab ( portrait ) ------------------------------------------- */
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
-    
-}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {}
 
 /* ------------------------------------------ media screen for tab (landscape) ------------------------------------------------- */
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
-
-    
-
-}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {}

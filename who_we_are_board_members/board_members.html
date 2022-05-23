@@ -12,6 +12,12 @@
     <!--==================== FONT AWESOME ====================-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css" />
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./css/board_members.css" />
 
@@ -25,8 +31,9 @@
         <nav class="navbar navbar-expand-lg navbar-light pb-0 top-nav">
             <div class="container-fluid">
                 <!--ARANNAYAK-->
-                <a href="../index.html" class="navbar-brand">
-                    <img class="nav-heading" src="./images/logo/image 5.png"></img>
+                <a href="../index.html">
+                    <!-- <img class="nav-heading" src="./images/logo/image 5.png"></img> -->
+                    <button class="logo-button"><img src="./images/logo/image 5.png" class="logo-image"></button>
                 </a>
 
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -38,7 +45,7 @@
                     <!--Forest-->
                     <ul class="nav navbar-nav mx-auto">
                         <li class="nav-item navbar-brand p-md-2">
-                            <a href="../forest/forest.html" class="nav-link navbar-link">Forest</a>
+                            <a href="./forest.html" class="nav-link navbar-link">Forest</a>
                         </li>
 
                         <!--Bio-Diversity-->
@@ -82,164 +89,268 @@
             </div>
         </nav>
 
-        <!--==================== DOWN NAVBAR ====================-->
+            <!--==================== DOWN NAVBAR ====================-->
 
-        <nav class="navbar navbar-expand-lg navbar-light down-nav pb-0">
-            <div class="container-fluid">
-                <div id="navbarCollapse" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav mx-auto">
-                        <!--Who we are -->
-                        <li class="nav-item navbar-brand who-we p-md-2">
-                            <a onmouseover="openNav1()" onclick="closeNav()" class="nav-link navbar-link">Who we are
-                            </a>
-                        </li>
-
-                        <!--What we do-->
-                        <li class="nav-item navbar-brand p-md-2">
-                            <a onmouseover="openNav2()" onclick="closeNav()" class="nav-link navbar-link">What we do</a>
-                        </li>
-
-                        <!--Where we work-->
-                        <li class="nav-item navbar-brand p-md-2">
-                            <a href="../under_construction/under_construction.html" onclick="closeNav()"
-                                class="nav-link navbar-link">Where we work</a>
-                        </li>
-
-                        <!--Give/ Donate -->
-                        <li class="nav-item navbar-brand p-md-2">
-                            <a href="../under_construction/under_construction.html" onclick="closeNav()"
-                                class="nav-link navbar-link">Give/Donate
-                            </a>
-                        </li>
-
-                        <!--Get Involved -->
-                        <li class="nav-item navbar-brand p-md-2">
-                            <a onmouseover="openNav5()" onclick="closeNav()" class="nav-link navbar-link">Get Involved
-                            </a>
-                        </li>
-
-                        <!--Media Center-->
-                        <li class="nav-item navbar-brand p-md-2">
-                            <a onmouseover="openNav6()" onclick="closeNav()" class="nav-link navbar-link">Media
-                                Center</a>
-                        </li>
-
-                        <!--Knowledge -->
-                        <li class="nav-item navbar-brand p-md-2">
-                            <a onmouseover="openNav7()" onclick="closeNav()" class="nav-link navbar-link">Knowledge</a>
-                        </li>
-                        <ul class="navbar-nav nav-item navbar-brand  p-md-2 ">
-                            <div class="d-flex flex-row language-style">
-                                <li class="me-1 ms-1">
-                                    <a href="#" class="nav-link">EN</a>
-                                </li>
-
-                                <div class="vr vr-style"></div>
-
-                                <li class="me-1 ms-1">
-                                    <a href="#" class="nav-link">BN </a>
-                                </li>
-                            </div>
-
+            <nav class="navbar navbar-expand-lg navbar-light down-nav pb-0">
+                <div class="container-fluid">
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav mx-auto">
+                            <!--Who we are -->
+                            <li class="nav-item navbar-brand who-we p-md-2">
+                                <a onmouseover="openNav1()" onclick="closeNav()" class="nav-link navbar-link">Who we are
+                                </a>
+                                <i class="fas fa-plus-circle d-lg-none" data-bs-toggle="dropdown"></i>
+    
+                                <div class="dropdown-menu">
+                                    <a href="../who_we_are_about_arannayk/about_arannayk.html" class="dropdown-item">About
+                                        Arannayk Foundation</a>
+                                    <div class="dropdown-divider divider-style"></div>
+    
+                                    <a href="../who_we_are_mission_vision_values/mission_vision_values.html"
+                                        class="dropdown-item">Mission, Vision & Values</a>
+                                    <div class="dropdown-divider divider-style"></div>
+    
+                                    <a href="./board_members.html" class="dropdown-item">Board
+                                        Members</a>
+                                    <div class="dropdown-divider divider-style"></div>
+    
+                                    <a href="../who_we_are_our_team/our_team.html" class="dropdown-item">Our Team</a>
+                                    <div class="dropdown-divider divider-style"></div>
+    
+                                    <a href="../who_we_are_our_achievements/our_achievements.html" class="dropdown-item">Our
+                                        Achievements</a>
+                                    <div class="dropdown-divider divider-style"></div>
+    
+                                    <a href="../who_we_are_our_timeline/our_timeline.html"
+                                        class="dropdown-item">Timeline</a>
+                                    <div class="dropdown-divider divider-style"></div>
+    
+                                    <a href="../who_we_are_our_partners_donors/partners_donors.html" class="dropdown-item">Our
+                                        Partners & Donors</a>
+                                </div>
+                            </li>
+    
+                            <!--What we do-->
+                            <li class="nav-item navbar-brand p-md-2">
+                                <a onmouseover="openNav2()" onclick="closeNav()" class="nav-link navbar-link">What we do</a>
+                                <i class="fas fa-plus-circle d-lg-none" data-bs-toggle="dropdown"></i>
+    
+                                <div class="dropdown-menu">
+                                    <a href="../under_construction/under_construction.html" class="dropdown-item">Our
+                                        Services</a>
+                                    <div class="dropdown-divider divider-style"></div>
+    
+                                    <a href="../under_construction/under_construction.html" class="dropdown-item">Current
+                                        Projects</a>
+                                    <div class="dropdown-divider divider-style"></div>
+    
+                                    <a href="../under_construction/under_construction.html" class="dropdown-item">Project
+                                        Archives</a>
+                                </div>
+                            </li>
+    
+                            <!--Where we work-->
+                            <li class="nav-item navbar-brand p-md-2">
+                                <a onmouseover="openNav3()" onclick="closeNav()" class="nav-link navbar-link">Where we
+                                    work</a>
+                                <i class="fas fa-plus-circle d-lg-none" data-bs-toggle="dropdown"></i>
+    
+                                <div class="dropdown-menu">
+                                    <a href="../under_construction/under_construction.html" class="dropdown-item">Map</a>
+                                </div>
+                            </li>
+    
+                            <!--Give/ Donate -->
+                            <li class="nav-item navbar-brand p-md-2">
+                                <a onmouseover="openNav4()" onclick="closeNav()" class="nav-link navbar-link">Give/Donate
+                                </a>
+                                <i class="fas fa-plus-circle d-lg-none" data-bs-toggle="dropdown"></i>
+    
+                                <div class="dropdown-menu">
+                                    <a href="../under_construction/under_construction.html" class="dropdown-item">Donate</a>
+                                </div>
+                            </li>
+    
+                            <!--Get Involved -->
+                            <li class="nav-item navbar-brand p-md-2">
+                                <a onmouseover="openNav5()" onclick="closeNav()" class="nav-link navbar-link">Get Involved
+                                </a>
+                                <i class="fas fa-plus-circle d-lg-none" data-bs-toggle="dropdown"></i>
+    
+                                <div class="dropdown-menu">
+                                    <a href="../under_construction/under_construction.html" class="dropdown-item">Career</a>
+                                    <div class="dropdown-divider divider-style"></div>
+    
+                                    <a href="../under_construction/under_construction.html"
+                                        class="dropdown-item">Consultancy</a>
+                                    <div class="dropdown-divider divider-style"></div>
+    
+                                    <a href="../under_construction/under_construction.html"
+                                        class="dropdown-item">Internship</a>
+                                    <div class="dropdown-divider divider-style"></div>
+    
+                                    <a href="../under_construction/under_construction.html"
+                                        class="dropdown-item">Procurement</a>
+                                </div>
+                            </li>
+    
+                            <!--Media Center-->
+                            <li class="nav-item navbar-brand p-md-2">
+                                <a onmouseover="openNav6()" onclick="closeNav()" class="nav-link navbar-link">Media
+                                    Center</a>
+                                <i class="fas fa-plus-circle d-lg-none" data-bs-toggle="dropdown"></i>
+    
+                                <div class="dropdown-menu">
+                                    <a href="../under_construction/under_construction.html" class="dropdown-item">Press
+                                        Release</a>
+                                    <div class="dropdown-divider divider-style"></div>
+    
+                                    <a href="../under_construction/under_construction.html" class="dropdown-item">Media
+                                        Coverage</a>
+                                    <div class="dropdown-divider divider-style"></div>
+    
+                                    <a href="../under_construction/under_construction.html" class="dropdown-item">Activity
+                                        Updates</a>
+                                    <div class="dropdown-divider divider-style"></div>
+    
+                                    <a href="../under_construction/under_construction.html" class="dropdown-item">Photos</a>
+                                    <div class="dropdown-divider divider-style"></div>
+    
+                                    <a href="../under_construction/under_construction.html" class="dropdown-item">Video
+                                        Stories</a>
+                                    <div class="dropdown-divider divider-style"></div>
+    
+                                    <a href="../under_construction/under_construction.html" class="dropdown-item">Blogs</a>
+                                </div>
+                            </li>
+    
+                            <!--Knowledge -->
+                            <li class="nav-item navbar-brand p-md-2">
+                                <a onmouseover="openNav7()" onclick="closeNav()" class="nav-link navbar-link">Knowledge</a>
+                                <i class="fas fa-plus-circle d-lg-none" data-bs-toggle="dropdown"></i>
+    
+                                <div class="dropdown-menu">
+                                    <a href="../under_construction/under_construction.html"
+                                        class="dropdown-item">Publications</a>
+                                    <div class="dropdown-divider divider-style"></div>
+    
+                                    <a href="../under_construction/under_construction.html" class="dropdown-item">Tools &
+                                        Data</a>
+                                </div>
+                            </li>
+                            <ul class="navbar-nav nav-item navbar-brand  p-md-2 ">
+                                <div class="d-flex flex-row language-style">
+                                    <li class="me-1 ms-1">
+                                        <a href="#" class="nav-link">EN</a>
+                                    </li>
+    
+                                    <div class="vr vr-style"></div>
+    
+                                    <li class="me-1 ms-1">
+                                        <a href="#" class="nav-link">BN </a>
+                                    </li>
+                                </div>
+    
+                            </ul>
                         </ul>
-                    </ul>
-
+    
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-
-    <section>
-
-        <!--------Forest Hero---------->
-        <div class="image-container">
-            <img src="./images/explore.png" class="image-cover" alt="Arannayak" />
-            <div class="scroll-down-button" id="exploreButton">
-                <button class="explore-btn">Explore<a href="#section02"><span class="mt-1"></span></a></button>
-            </div>
-
-            <!------Nav hover section---------->
-
-            <!--Who We Are-->
-            <div class="overlay" id="whoWeAre">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <nav class="overlay-menu">
-                    <div class="container p-5">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="d-flex align-items-center">
-
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../who_we_are_about_arannayk/about_arannayk.html"
-                                                class="nav-link">About Arannayk
-                                                Foundation</a></li>
+            </nav>
+        </header>
+    
+        <section>
+    
+            <!--------Forest Hero---------->
+            <div class="image-container">
+                <img src="./images/explore.png" class="image-cover" alt="Arannayak" />
+                <div class="scroll-down-button" id="exploreButton">
+                    <button class="explore-btn">explore<a href="#section02"><span class="mt-1"></span></a></button>
+                </div>
+    
+                <!------Nav hover section---------->
+    
+                <!--Who We Are-->
+                <div class="overlay" id="whoWeAre">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <nav class="overlay-menu">
+                        <div class="container p-5">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="d-flex align-items-center">
+    
+                                        <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
+    
+                                        <div>
+                                            <li class="nav-item navbar-brand"><a
+                                                    href="../who_we_are_about_arannayk/about_arannayk.html"
+                                                    class="nav-link overlay-text">About Arannayk
+                                                    Foundation</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
+                                        <div>
+                                            <li class="nav-item navbar-brand"><a
+                                                    href="../who_we_are_mission_vision_values/mission_vision_values.html"
+                                                    class="nav-link overlay-text">Mission, Vision &
+                                                    Values</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
+                                        <div>
+                                            <li class="nav-item navbar-brand"><a
+                                                    href="./board_members.html"
+                                                    class="nav-link overlay-text">Board Members</a>
+                                            </li>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a href="../who_we_are_mission_vision_values/mission_vision_values.html"
-                                                class="nav-link">Mission, Vision &
-                                                Values</a></li>
+    
+                                <div class="col-md-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
+                                        <div>
+                                            <li class="nav-item navbar-brand"><a href="../who_we_are_our_team/our_team.html"
+                                                    class="nav-link overlay-text">Our Team</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
+                                        <div>
+                                            <li class="nav-item navbar-brand"><a
+                                                    href="../who_we_are_our_achievements/our_achievements.html"
+                                                    class="nav-link overlay-text">Our
+                                                    Achievements</a></li>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="./board_members.html"
-                                                class="nav-link">Board Members</a>
-                                        </li>
+    
+                                <div class="col-md-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
+                                        <div>
+                                            <li class="nav-item navbar-brand"><a
+                                                    href="../who_we_are_our_timeline/our_timeline.html"
+                                                    class="nav-link overlay-text">Timeline</a></li>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../who_we_are_our_team/our_team.html"
-                                                class="nav-link">Our Team</a></li>
+                                    <div class="d-flex align-items-center">
+                                        <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
+                                        <div>
+                                            <li class="nav-item navbar-brand"><a
+                                                    href="../who_we_are_our_partners_donors/partners_donors.html"
+                                                    class="nav-link overlay-text">Our Partners &
+                                                    Donors</a></li>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html"
-                                                class="nav-link">Our
-                                                Achievements</a></li>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html"
-                                                class="nav-link">Timeline</a></li>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html"
-                                                class="nav-link">Our Partners &
-                                                Donors</a></li>
-                                    </div>
+    
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </nav>
-            </div>
+                    </nav>
+                </div>
 
             <!--What we do-->
 
@@ -255,7 +366,8 @@
 
                                     <div>
                                         <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
+                                                href="../under_construction/under_construction.html"
+                                                class="nav-link overlay-text">
                                                 Our Services</a></li>
                                     </div>
                                 </div>
@@ -267,8 +379,9 @@
                                     <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
                                     <div>
                                         <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                                Current projects</a></li>
+                                                href="../under_construction/under_construction.html"
+                                                class="nav-link overlay-text">
+                                                Current Projects</a></li>
                                     </div>
                                 </div>
 
@@ -280,8 +393,9 @@
                                     <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
                                     <div>
                                         <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                                Project archives</a></li>
+                                                href="../under_construction/under_construction.html"
+                                                class="nav-link overlay-text">
+                                                Project Archives</a></li>
                                     </div>
                                 </div>
 
@@ -305,36 +419,11 @@
 
                                     <div>
                                         <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                            </a>
-                                        </li>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
+                                                href="../under_construction/under_construction.html"
+                                                class="nav-link overlay-text">Map
                                             </a></li>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="col-md-4">
-
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                            </a></li>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </div>
@@ -355,63 +444,9 @@
 
                                     <div>
                                         <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                            </a></li>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                            </a></li>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                            </a>
-                                        </li>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                            </a></li>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                            </a></li>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                            </a></li>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                            </a></li>
+                                                href="../under_construction/under_construction.html"
+                                                class="nav-link overlay-text">
+                                                Donate</a></li>
                                     </div>
                                 </div>
                             </div>
@@ -434,7 +469,8 @@
 
                                     <div>
                                         <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
+                                                href="../under_construction/under_construction.html"
+                                                class="nav-link overlay-text">
                                                 Career</a></li>
                                     </div>
                                 </div>
@@ -442,11 +478,11 @@
                                     <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
                                     <div>
                                         <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
+                                                href="../under_construction/under_construction.html"
+                                                class="nav-link overlay-text">
                                                 Internship</a></li>
                                     </div>
                                 </div>
-
                             </div>
 
                             <div class="col-md-4">
@@ -454,21 +490,25 @@
                                     <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
                                     <div>
                                         <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                                Consultancy</a></li>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
-                                    <div>
-                                        <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
+                                                href="../under_construction/under_construction.html"
+                                                class="nav-link overlay-text">
                                                 Procurement
                                             </a></li>
                                     </div>
                                 </div>
                             </div>
 
+                            <div class="col-md-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
+                                    <div>
+                                        <li class="nav-item navbar-brand"><a
+                                                href="./under_construction/under_construction.html"
+                                                class="nav-link overlay-text">
+                                                Consultancy</a></li>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -489,16 +529,18 @@
 
                                     <div>
                                         <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                                Press release</a></li>
+                                                href="../under_construction/under_construction.html"
+                                                class="nav-link overlay-text">
+                                                Press Release</a></li>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
                                     <div>
                                         <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                                Media coverage </a></li>
+                                                href="../under_construction/under_construction.html"
+                                                class="nav-link overlay-text">
+                                                Media Coverage </a></li>
                                     </div>
                                 </div>
 
@@ -509,15 +551,17 @@
                                     <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
                                     <div>
                                         <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                                Activity updates</a></li>
+                                                href="../under_construction/under_construction.html"
+                                                class="nav-link overlay-text">
+                                                Activity Updates</a></li>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
                                     <div>
                                         <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
+                                                href="../under_construction/under_construction.html"
+                                                class="nav-link overlay-text">
                                                 Photos</a></li>
                                     </div>
                                 </div>
@@ -528,15 +572,17 @@
                                     <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
                                     <div>
                                         <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
-                                                Video stories</a></li>
+                                                href="../under_construction/under_construction.html"
+                                                class="nav-link overlay-text">
+                                                Video Stories</a></li>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <img src="./images/Polygon 5.png" style="width:20px; height:20px;">
                                     <div>
                                         <li class="nav-item navbar-brand"><a
-                                                href="../under_construction/under_construction.html" class="nav-link">
+                                                href="../under_construction/under_construction.html"
+                                                class="nav-link overlay-text">
                                                 Blogs</a></li>
                                     </div>
                                 </div>
@@ -562,7 +608,7 @@
                                     <div>
                                         <li class="nav-item navbar-brand"><a
                                                 href="../under_construction/under_construction.html"
-                                                class="nav-link navbar-link">
+                                                class="nav-link overlay-text">
                                                 Publications</a></li>
                                     </div>
                                 </div>
@@ -575,11 +621,10 @@
                                     <div>
                                         <li class="nav-item navbar-brand"><a
                                                 href="../under_construction/under_construction.html"
-                                                class="nav-link navbar-link">
+                                                class="nav-link overlay-text">
                                                 Tools & Data</a></li>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -929,9 +974,6 @@
         }
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
 </body>
 
 </html>
