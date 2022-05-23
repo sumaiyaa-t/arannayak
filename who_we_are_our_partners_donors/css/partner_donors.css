@@ -237,13 +237,10 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 /* Forest Div */
-
 .forest-div {
     background-image: url(../images/explore.png);
     box-shadow: inset 0 0 2000px rgba(2, 74, 74, 0.6);
 }
-
-
 .forest-image {
     background-size: cover;
     position: relative;
@@ -365,6 +362,16 @@ input[type="search"]::-webkit-search-cancel-button {
         font-size: 35px;
     }
 
+    /* Forest Div */
+
+    .forest-image {
+        position: relative;
+        margin-top: -100;
+        background-image: url("../images/forest.png");
+        background-position: center;
+        background-repeat: repeat;
+    }
+
     .overlay {
         display: none;
     }
@@ -414,27 +421,31 @@ input[type="search"]::-webkit-search-cancel-button {
         display: none;
     }
 }
-
 @media only screen and (min-device-width: 481px) and (max-device-width: 991px) {
 
     .overlay {
-        display: none;
+      display: none;
     }
-
+  
     .navbar-link:hover {
-        color: #fff !important;
-        background: none;
-        box-shadow: none;
+      color: #fff !important;
+      background: none;
+      box-shadow: none;
     }
-
+  
     .language-style {
-        border: none;
+      border: none;
     }
-
-}
+  
+  }
+  
 
 
 /*=============== All sections ===============*/
+body{
+    background-color: #059c9a;
+}
+
 
 .top-heading {
     background-color: #024a4a;
@@ -451,204 +462,64 @@ input[type="search"]::-webkit-search-cancel-button {
     text-align: justify;
 }
 
-/*Latest projects*/
-.project-card {
+/*=============== Our team sections ===============*/
 
-    border-radius: 50px;
-    box-shadow: 0px 4px 1px 5px #E8EDF0;
-}
-
-.card-subheading {
-    font-weight: 500;
-    font-size: 30px;
-    color: #024A4A;
+.odd-member-name {
+    margin-top: 2rem;
+    color: #fff;
     text-align: center;
+    font-size: 18px;
 }
 
-.card-text {
-    font-weight: 300;
-    font-size: 14px;
+.second-section {
+    background-color: #fff;
 }
 
-.hr-style {
-    background-color: #059C9A;
-}
-
-.section-button {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 1px 5px #E8EDF0;
-    border-radius: 50px;
-    color: #024A4A;
-    font-weight: 500;
-    font-size: 30px;
-    border: none;
-}
-
-/* Card slider*/
-
-/* Equal Heights for OwlCarousel 2 */
-/* --------------------- carousal code --------------------------- */
-
-.owl-carousel .owl-stage {
-    display: flex;
-}
-
-.owl-carousel .owl-item {
-    display: flex;
-    flex: 1 0 auto;
-}
-
-.owl-carousel .thumbnail {
-    display: flex;
-    flex-direction: column;
-    margin: 0 15px;
-}
-
-.owl-carousel .thumbnail .caption {
-    display: flex;
-    flex: 1 0 auto;
-    flex-direction: column;
-}
-
-.owl-carousel .thumbnail .caption .flex-text {
-    flex-grow: 1;
-}
-
-.owl-nav button.owl-prev {
-    left: 0;
-}
-
-.owl-nav button.owl-next {
-    right: 0;
-}
-
-.owl-dots {
-    text-align: center;
-    padding-top: 15px;
-}
-
-.owl-dots button.owl-dot {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    display: inline-block;
-    background: #059c9a;
-    margin: 0 5px;
-    border: none;
-}
-
-.owl-dots button.owl-dot.active {
+.third-section{
     background-color: #024A4A;
 }
 
-.slider-section {
-    margin: 10px;
-
-}
-
-/* --------------------- carousal code --------------------------- */
-
-.project-card {
-    border-radius: 50px;
-    box-shadow: 0px 4px 1px 5px #e8edf0;
-}
-
-.card-subheading {
-    font-weight: 500;
-    font-size: 30px;
-    color: #024a4a;
+.even-member-name {
+    margin-top: 2rem;
+    color: #024A4A;
     text-align: center;
+    font-size: 18px;
 }
 
-.project-image {
-    width: 200px;
-    height: 180px;
-    border-radius: 41px;
+.img-style{
+    border-radius: 150px;
+    width: 250px;
+    height: 250px;
+
 }
 
-.slider-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50px;
+.text-title {
+    color: #fff;
+    font-size: 36px;
 }
 
-.card-text {
-    font-weight: 300;
-    font-size: 14px;
-}
-
-.hr-style {
-    background-color: #059c9a;
-}
-
-.card-img-top {
-    object-fit: cover;
-}
-
-
-#cards-container {
-    overflow: hidden;
-    margin: 20px;
-}
-
-.cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 99999px;
-}
-
-.card-slide {
-    /* Add shadows to create the "card" effect */
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background: #fff;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    width: 235px;
-    margin: 15px 7.5px;
-    border-radius: 50px;
-}
-
-.card-img-top {
-    object-fit: cover;
-}
 
 
 /*=============== Media screen for mobile devices ===============*/
 
 @media only screen and (max-width: 600px) {
 
-
     /* All Section */
     .heading-text {
         font-size: 35px;
     }
 
-    .project-image {
-        width: 500px;
-        height: 300px;
-    }
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
 
-    .project-image {
-        width: 500px;
-        height: 300px;
-    }
+  
 
 }
 
 /*=============== Media screen for larger devices ===============*/
 
 @media screen and (min-width: 1600px) {
-    .card-subheading {
-        margin-top: 2rem;
-    }
+   
 
-    .slider-image {
-        width: 400px;
-        height: 300px;
-    }
 }

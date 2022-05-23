@@ -238,8 +238,8 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* Forest Div */
 .forest-div {
-    background-color: #024a4a;
-    height: 70px;
+    background-image: url(../images/explore.png);
+    box-shadow: inset 0 0 2000px rgba(2, 74, 74, 0.6);
 }
 
 .forest-image {
@@ -363,14 +363,7 @@ input[type="search"]::-webkit-search-cancel-button {
         font-size: 35px;
     }
 
-    /* Forest Div */
-    .forest-div {
-        border: none;
-        cursor: pointer;
-        background-color: #024a4a;
-        height: 60px;
-    }
-
+  
     .forest-image {
         position: relative;
         margin-top: -100;
