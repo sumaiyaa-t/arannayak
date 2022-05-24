@@ -148,11 +148,12 @@ input[type="search"]::-webkit-search-cancel-button {
     display: block;
     border-radius: 50px;
 }
-.dropdown-item:hover{
+
+.dropdown-item:hover {
     color: #fff;
     background: #024a4a;
-  
-  }
+
+}
 
 /*=============== Forest hero section (Nav overlay) ===============*/
 
@@ -463,12 +464,10 @@ input[type="search"]::-webkit-search-cancel-button {
     }
 }
 
-/* Our Services section*/
-body{
-    
-}
 
-.section-details{
+/* Our Services section*/
+
+.section-details {
     background-color: #059c9a;
 }
 
@@ -487,6 +486,7 @@ body{
     border-radius: 50px;
 }
 
+
 .subtext {
     color: #fff;
     text-align: center;
@@ -494,14 +494,64 @@ body{
     font-size: 25px;
 }
 
-.hr-style{
+.hr-style {
     background-color: #fff;
 }
-.subcard-text{
+
+.subcard-text {
     font-weight: 500;
     font-size: 20px;
     text-align: justify;
     color: #fff;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.overlay2 {
+    background: rgba(5, 156, 154, 0.7);
+    overflow: hidden;
+    height: 100%;
+    border-radius: 50px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -513,10 +563,7 @@ body{
         border: none;
     }
 
-    .img-card {
-        width: 300px;
-        height: 320px;
-        object-fit: cover;
-        border-radius: 50px;
+    .subtext {
+        font-size: 20px;
     }
 }
