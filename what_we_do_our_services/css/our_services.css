@@ -468,7 +468,7 @@ body{
 }
 
 .card-style {
-    width: 400px;
+    width: 300px;
     height: 500px;
     background-color: #059c9a;
     border-radius: 50px;
@@ -476,8 +476,8 @@ body{
 }
 
 .img-card {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 258px;
     object-fit: cover;
     border-radius: 50px;
 }
