@@ -148,6 +148,11 @@ input[type="search"]::-webkit-search-cancel-button {
     display: block;
     border-radius: 50px;
 }
+.dropdown-item:hover{
+  color: #fff;
+  background: #024a4a;
+
+}
 
 /*=============== Forest hero section (Nav overlay) ===============*/
 
