@@ -502,8 +502,12 @@ input[type="search"]::-webkit-search-cancel-button {
 
 
 .image-style {
-    width: 200px;
-    height: 200px;
+    width: 280px;
+   
+   
+    height: 280px;
+    margin-top: 5px;
+
 }
 
 tbody,
@@ -514,7 +518,7 @@ thead,
 tr {
     border-color: #fff;
     border-style: solid;
-    border-width: 20;
+    border-width: 5;
 }
 
 @media only screen and (max-width: 600px) {
@@ -531,10 +535,48 @@ tr {
 @media only screen and (min-device-width: 481px) and (max-device-width: 991px) {
     .image-style {
         width: 300px;
-        height: 300px;
+        height: 280px;
         display: block;
         margin: auto;
     }
 }
+@media only screen and (min-device-width: 991px) and (max-device-width: 1220px) {
+    .image-style {
+        width: 200px;
+        height: 280px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 1400px) {    
+    .image-style {
+        width: 300px;
+        height: 250px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media screen and (min-device-width: 1600px) and (max-width: 1920px) {    
+    .image-style {
+        width: 350px;
+        height: 250px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
 
 
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 991px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+}
