@@ -469,6 +469,8 @@ input[type="search"]::-webkit-search-cancel-button {
 
 }
 
+/*-------------ALL SECTIONS ----------------*/
+
 .project-number {
     background-color: #024a4a;
     color: #fff;
@@ -494,7 +496,6 @@ input[type="search"]::-webkit-search-cancel-button {
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
-    text-align: center;
     color: #024A4A;
     padding: 1rem;
     margin-right: 0.25rem;
@@ -503,8 +504,6 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .image-style {
     width: 280px;
-   
-   
     height: 280px;
     margin-top: 5px;
 
@@ -521,6 +520,9 @@ tr {
     border-width: 5;
 }
 
+.list-achievements{
+list-style:disc;
+}
 @media only screen and (max-width: 600px) {
 
     .image-style {
