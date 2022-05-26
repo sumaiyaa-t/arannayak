@@ -1,52 +1,53 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 /*=============== BASE ===============*/
 
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: 'M PLUS 1p', sans-serif;
+  /* font-family: 'M PLUS 1p', sans-serif; */
+  font-family: "Roboto", sans-serif;
 }
 
-
 /*=============== NAVBAR ===============*/
-
 .top-nav {
-    background-color: #059C9A;
+  background-color: #059c9a;
 }
 
 .nav-heading {
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 30px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 30px;
 }
 
 .navbar-light .navbar-brand {
-    color: #fff !important;
+  color: #fff !important;
 }
 
 /*=============== Under construction ===============*/
 
 .section-style {
-    margin-top: 120px;
+  margin-top: 120px;
 }
 
 .status-reason {
-    font-size: 40px;
-    text-align: center;
+  font-size: 40px;
+  text-align: center;
 }
 
 .status-reason .fa {
-    font-size: 60px;
-    background-color: #ecc900;
-    color: transparent;
-    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
+  font-size: 60px;
+  background-color: #ecc900;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
 }
 
 .status-text {
-    font-size: 20px;
-    text-align: center;
+  font-size: 20px;
+  text-align: center;
 }
