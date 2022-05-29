@@ -32,9 +32,8 @@
 }
 
 .nav-heading {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 800;
-  line-height: 30px;
 }
 
 .navbar-light .navbar-brand {
@@ -116,10 +115,13 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .dropdown-menu {
-  background-color: #024a4a;
+  background-color: rgba(5, 156, 154, 0.5);
   border: none;
 }
 
+/* .dropdown:hover .dropdown-menu{
+  display: block;
+} */
 .divider-style {
   background-color: #059c9a;
 }
@@ -156,7 +158,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .dropdown-item:hover {
   color: #fff;
-  background: #024a4a;
+  background: none;
 }
 /*=============== Forest hero section ===============*/
 
